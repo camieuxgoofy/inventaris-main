@@ -48,7 +48,7 @@ if (isset($_GET['logout'])) {
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Atasan</title>
+    <title>Staff</title>
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -302,6 +302,9 @@ if (isset($_GET['logout'])) {
                     break;
                 case 'profile':
                     include "profile.php";
+                    break;
+                case 'kelTransaksi':
+                    include "admin/Transaksi.php";
                     break;
                 case 'kasirTransaksi':
                     include "admin/kasirTransaksi.php";
