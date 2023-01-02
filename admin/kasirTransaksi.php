@@ -40,11 +40,11 @@
                         $jumlah = $dta['jumlah'] + $jumlah;
                         $value = "jumlah='$jumlah'";
                         $insert = $trans->update("table_antrian",$value,"kd_barang_keluar = '$kd_barang_keluar' AND kd_barang",$barang,"?page=kasirTransaksi");
-                        header("location:pageManager.php?page=kasirTransaksi");
+                        header("location:pageAdmin.php?page=kasirTransaksi");
                     }else{
                         $value = "'$kd_antrian','$kd_barang_keluar','$barang','$jumlah','$total'";
                         $insert = $trans->insert("table_antrian",$value,"?page=kasirTransaksi");
-                        header("location:pageManager.php?page=kasirTransaksi");
+                        header("location:pageAdmin.php?page=kasirTransaksi");
                     }
                 }
             }
@@ -217,7 +217,7 @@
                     <tbody>
                         <?php foreach($barangs as $brs){ ?>
                         <tr>
-                            <td><a href="pageManager.php?page=kasirTransaksi&getItem&id=<?php echo $brs['kd_barang'] ?>"><?php echo $brs['kd_barang'] ?></a></td>
+                            <td><a href="pageAdmin.php?page=kasirTransaksi&getItem&id=<?php echo $brs['kd_barang'] ?>"><?php echo $brs['kd_barang'] ?></a></td>
                             <td><?php echo $brs['nama_barang'] ?></td>
                             <td><?php echo $brs['harga_barang'] ?></td>
                             <td><?php echo $brs['stok_barang'] ?></td>
