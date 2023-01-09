@@ -64,7 +64,6 @@ if (isset($_GET['delete'])) {
                         </div>
                         <div class="card-body">
                             <a href="?page=addBarang" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Barang</a>
-                            <!-- <a href="?page=addStokBarang" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Stok Barang</a> -->
                             <button class="btn btn-info" onclick="window.print()">Print</button>
                             <br>
                             <br>
@@ -104,7 +103,7 @@ if (isset($_GET['delete'])) {
 
                                                         <a href="?page=viewBarangEdit&edit&id=<?= $ds['kd_barang'] ?>" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-info"><i class="fa fa-edit"></i></a>
 
-                                                        <!-- <a data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-danger"><i class="fa fa-trash" style="color: white;" id="btdelete<?php echo $no; ?>"></i></a> -->
+                                                       <a data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-danger"><i class="fa fa-trash" style="color: white;" id="btdelete<?php echo $no; ?>"></i></a>
                                                         </a>
                                                     </div>
                                                 </td>
